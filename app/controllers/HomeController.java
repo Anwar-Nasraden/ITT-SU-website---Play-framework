@@ -38,6 +38,7 @@ public class HomeController extends Controller {
       public Result contact() {
             return ok(contact.render());
         }
+<<<<<<< HEAD
 
 	
       public Result soccer() {
@@ -51,5 +52,7 @@ public class HomeController extends Controller {
       public Result join() {
             return ok(join.render());
         }
+=======
+>>>>>>> f4e750c6bf302b21f6edb0b3f1fdc2ccc03b0e5f
 }
 

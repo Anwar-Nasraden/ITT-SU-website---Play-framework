@@ -38,6 +38,7 @@ GET     /whatson                           controllers.HomeController.whatson
 
 #The Contact Us page
 GET     /contact                           controllers.HomeController.contact
+<<<<<<< HEAD
 
 #Soccer
 GET     /soccer                        controllers.HomeController.soccer
@@ -56,3 +57,5 @@ POST	/login												controllers.LoginCtrl.authenticate()
 
 GET     /logout                     controllers.LoginCtrl.logout()
 
+=======
+>>>>>>> f4e750c6bf302b21f6edb0b3f1fdc2ccc03b0e5f

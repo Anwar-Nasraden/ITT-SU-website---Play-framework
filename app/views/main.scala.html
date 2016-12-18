@@ -32,7 +32,10 @@
 
 
     <body>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> f4e750c6bf302b21f6edb0b3f1fdc2ccc03b0e5f
          <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -41,6 +44,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li @if(title == "Home"){class="active"}><a href="@routes.HomeController.home">Home</a></li>
       <li @if(title == "About Us"){class="active"}><a href="@routes.HomeController.about">About Us</a></li>
+<<<<<<< HEAD
       
 <li @if(title == "Clubs"){class="active"}><a href="@routes.HomeController.clubs">Clubs & Socities</a></li>
       
@@ -53,6 +57,27 @@
 										
  
  </li>
+=======
+      <li class="dropdown">
+                        <a  class="dropdown-toggle" data-toggle="dropdown">Clubs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Soccer Club</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Basketball club</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Table tennis club</a>
+                            </li>
+                              <li>
+                                <a href="blog-post.html">View more clubs</a>
+                            </li>
+                        </ul>
+                    </li>
+      <li @if(title == "Whatson"){class="active"}><a href="@routes.HomeController.whatson">Whats On</a></li>
+       <li @if(title == "Contact Us"){class="active"}><a href="@routes.HomeController.contact">Contact Us</a></li>
+>>>>>>> f4e750c6bf302b21f6edb0b3f1fdc2ccc03b0e5f
 
       
      

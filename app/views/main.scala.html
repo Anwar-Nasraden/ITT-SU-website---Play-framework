@@ -1,0 +1,76 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+ *@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @* Here's where we render the page title `String`. *@
+        <title>@title</title>
+       
+
+
+
+
+         <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/modern-business.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+
+
+    <body>
+	
+         <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="@routes.HomeController.home">SU ITT</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li @if(title == "Home"){class="active"}><a href="@routes.HomeController.home">Home</a></li>
+      <li @if(title == "About Us"){class="active"}><a href="@routes.HomeController.about">About Us</a></li>
+      
+<li @if(title == "Clubs"){class="active"}><a href="@routes.HomeController.clubs">Clubs & Socities</a></li>
+      
+      <li @if(title == "Whatson"){class="active"}><a href="@routes.HomeController.whatson">Whats On</a></li>
+       <li @if(title == "Contact Us"){class="active"}><a href="@routes.HomeController.contact">Contact Us</a></li>
+ <li>
+						
+										
+                      	<a href="@routes.LoginCtrl.login()">Login</a>
+										
+ 
+ </li>
+
+      
+     
+      
+    </ul>
+  </div>
+</nav>
+     <div class="container-fluid text-center">
+         
+
+        @* And here's where we render the `Html` object containing
+         * the page content. *@
+        @content
+    </div>
+    <footer class="container-fluid text-center">
+    	<p></p>
+    </footer>
+
+
+    </body>
+</html>
